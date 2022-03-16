@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scope {
+    box-shadow: 1px 1px 6px 6px #bdbcbc;
+}
+
+.card {
+    width: 414px;
+    height: 710px;
+    border: none;
+    border-radius: 0;
+    background-image: url("./images/todo-bg.png");
+}
+
+.title {
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.plus {
+    position: absolute;
+    left: 81%;
+    top: 25%;
+    width: 54px;
+    height: 53px;
+}
+
+.todoList {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 0.7rem;
+}
+
+.dialog {
+    border: none !important;
+    width: 412px;
+    margin-top: 440px;
+    display: none;
+}
+
+.dialog .input-title {
+    width: 375px;
+}
+
+.dialog .input-title:focus {
+    background-color: rgb(236, 235, 235);
+}
+
+.dialog .input-description {
+    width: 375px;
+    height: 100px;
+    resize: none;
+}
+
+.dialog .input-description:focus {
+    background-color: rgb(236, 235, 235);
+}
+
+.dialog .input-button {
+    width: 375px;
+    height: 45px;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: rgb(180, 111, 245);
+    color: white;
+    border: 1px solid rgb(180, 111, 245);
+}
+
+.dialog .input-button:hover {
+    background-image: -webkit-linear-gradient(left, rgb(198, 141, 252) 0%, rgb(148, 47, 243) 100%);
+    color: white;
+    font-weight: 600;
+}
+
+
+/* JS ile oluşturulan HTML'lerin CSS leri*/
+
+.content {
+    display: flex;
+    flex-direction: col;
+    padding-left: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 90px;
+    max-height: 165px;
+    overflow: hidden;
+    margin-bottom: 0.7rem;
+    margin-right: 5px;
+    background-color: white;
+    align-items: center;
+}
+
+.content button {
+    background: url('./images/unchecked.png'), center, none;
+    background-size: contain;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.content .articles {
+    padding-left: 15px;
+}
+
+.content .articles h5 {
+    padding-left: 15px;
+}
+
+.content .articles span {
+    padding-left: 15px;
+}
+
+.content .remove-thiks {
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+}
+
+.content.todo-checked {
+    background-color: rgb(207, 207, 207);
+}
+
+.content.todo-checked .articles h5 {
+    text-decoration: line-through;
+}
+
+.content.todo-checked button {
+    background: url('./images/checked.png'), center, no-repeat;
+}
+
+.none-todos {
+    margin-top: 150px;
+    position: relative;
+    color: rgb(180, 111, 245);
+    font-size: 30px;
+    width: fit-content;
+    font-weight: bold;
+}

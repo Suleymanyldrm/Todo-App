@@ -31,7 +31,7 @@ body {
 }
 
 .todoList {
-    max-height: 501px;
+    max-height: 405px;
     overflow-y: auto;
     margin-bottom: 0.7rem;
 }
